@@ -28,6 +28,8 @@
 #whyus {
   min-height: 50vh;
   padding: 0px 10% 5%;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 #whyus h1 {
   margin-left: 50%;
