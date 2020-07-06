@@ -1,0 +1,64 @@
+.aboutblock {
+  float: right;
+  color: white;
+  bottom: 15%;
+  right: 0%;
+  position: absolute;
+  width: 25%;
+  z-index: 2;
+}
+.aboutblock h1 {
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 0px;
+}
+#port {
+  min-height: 80vh;
+  padding: 5% 10% 5%;
+}
+.doc {
+  float: left;
+  text-align: center;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  font-weight: 200;
+  text-shadow: 1px 1px rgb(168, 166, 166);
+}
+.details {
+  font-size: 22px;
+  margin: 0px 0px 0px 10px;
+  font-weight: 400;
+}
+.details::first-letter {
+  font-size: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  .aboutblock {
+    /* display: none; */
+    bottom: 10%;
+    right: 0%;
+    text-align: center;
+    width: 50%;
+  }
+  .aboutblock h1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+  .doc img {
+    width: 200px;
+    height: 200px;
+  }
+  .doc {
+    width: 100%;
+    margin: 50px 0px 50px 0px;
+  }
+  .doc p {
+    font-size: 12px;
+  }
+  .details {
+    font-size: 16px;
+    margin: 0px 0px 50px 10px;
+    font-weight: 400;
+  }
+}

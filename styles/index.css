@@ -85,14 +85,10 @@
     position: relative;
   }
   .headblock {
-    float: right;
-    color: white;
     /* display: none; */
     bottom: 25%;
     right: 0%;
-    position: absolute;
     width: 50%;
-    z-index: 2;
   }
   .headblock h1 {
     font-size: 20px;
@@ -104,5 +100,15 @@
   }
   #whyus h1::after {
     margin-top: 5px;
+  }
+  #whyus p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .intro {
+    margin-top: 30px;
+  }
+  .intro::first-letter {
+    font-size: 30px;
   }
 }
