@@ -115,9 +115,6 @@ p {
   padding: 10px 10px; /*we need to now move the logo down vertical padding*/
   text-align: left;
 }
-#links li {
-  margin-top: 2%;
-}
 #logo /*here*/ {
   position: relative;
   top: -10px;
@@ -169,7 +166,7 @@ button:active {
 
 /*button end*/
 #logo img {
-  height: 100px;
+  height: 80px;
 }
 #mobile-menu {
   display: none;
