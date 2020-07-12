@@ -188,10 +188,14 @@
     font-size: 12px;
   }
   .three {
-    font-size: 10px;
+    font-size: 12px;
   }
   .four {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .four h2,
+  .three h2 {
+    bottom: 0px;
   }
   .owl-prev {
     display: none !important;
@@ -207,5 +211,11 @@
   }
   .slide h2 {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .three img,
+  .four img {
+    display: none !important;
   }
 }

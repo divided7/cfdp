@@ -1,0 +1,167 @@
+.contblock {
+  float: right;
+  color: white;
+  bottom: 15%;
+  right: 0%;
+  position: absolute;
+  width: 25%;
+  z-index: 2;
+}
+.contblock h1 {
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 0px;
+}
+#conthead {
+  margin-top: 12vh;
+  height: 75vh;
+
+  background-image: url("../res/learn.jpg");
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-color: #ffffff;
+  position: relative;
+}
+#conthead::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+}
+.cont {
+  padding: 3% 5% 5%;
+  position: relative;
+  min-height: 100vh;
+}
+.cont h1 {
+  display: block;
+  text-align: center;
+  font-size: 54px;
+  text-align: center;
+}
+.cont h1::after {
+  content: "";
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 400px;
+  background-color: #ffad94;
+  margin-top: 10px;
+}
+.ctxt {
+  float: right;
+  margin-top: 10%;
+  margin-right: 5%;
+  font-size: 22px;
+  text-align: end;
+}
+
+.phone {
+  margin-top: 20%;
+  width: 300px;
+}
+
+.email {
+  margin-top: 20%;
+  width: 300px;
+}
+iframe {
+  border-radius: 30px;
+  margin-top: 2%;
+  width: 50vw;
+  height: 90vh;
+}
+/* .consult {
+  padding: 0% 5% 5%;
+  position: relative;
+}
+.consult h1 {
+  display: block;
+  text-align: start;
+  font-size: 32px;
+}
+.consult h1::after {
+  content: "";
+  display: block;
+  margin-left: 5px;
+  height: 4px;
+  width: 200px;
+  background-color: #ffad94;
+  margin-top: 5px;
+} */
+td,
+th {
+  text-align: center;
+  padding: 0 15px;
+  font-size: 18px;
+}
+table {
+  margin-top: 15%;
+  border: 1px solid black;
+  border-radius: 20px;
+  transform: translateX(10%);
+}
+@media only screen and (max-width: 1000px) {
+  .contblock {
+    /* display: none; */
+    bottom: 10%;
+    right: 0%;
+    text-align: center;
+    width: 50%;
+  }
+  .contblock h1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+  .cont h1 {
+    font-size: 32px;
+  }
+  .cont h1::after {
+    margin-top: 5px;
+    width: 100px;
+  }
+  iframe {
+    height: 75vh;
+    width: 100%;
+  }
+  .ctxt {
+    float: none;
+    margin-top: 0%;
+    margin-right: 0%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .address,
+  .email,
+  .phone {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 10px;
+  }
+  td,
+  th {
+    text-align: center;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  table {
+    margin-top: 15%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transform: translateX(0%);
+    margin-bottom: 15%;
+  }
+}
