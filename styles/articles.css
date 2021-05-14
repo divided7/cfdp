@@ -1,0 +1,140 @@
+#nav-left li {
+  transform: translate(0, 25px);
+}
+#port h1 {
+  font-size: 2.5vw;
+  width: 60%;
+}
+#port h1::after {
+  content: "";
+  display: block;
+  margin-left: 0%;
+  height: 4px;
+  width: 60%;
+  background-color: #ffad94;
+  margin-top: 20px;
+}
+.floortime,
+.aba {
+  width: 60%;
+  display: inline-block;
+}
+.floortime p,
+.aba p {
+  width: 80%;
+}
+#port {
+  padding: 5% 5% 5%;
+}
+.points li {
+  margin-top: 10px;
+}
+.aba {
+  display: none;
+}
+.right {
+  float: right;
+  width: 40%;
+  margin-top: 10%;
+}
+.rightp {
+  margin-top: 0%;
+  float: right;
+  width: 40%;
+}
+.right img {
+  width: 100%;
+}
+.rightp img {
+  width: 100%;
+}
+
+.points {
+  max-width: 80%;
+}
+
+.tab {
+  overflow: hidden;
+  margin-top: 10%;
+}
+
+.tab button {
+  position: relative;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #cccc;
+  color: #676767;
+  z-index: 1;
+  width: 50%;
+}
+.tab button.active {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #ffad94;
+}
+.tab button.passive {
+  z-index: 1;
+  color: #676767;
+  background-color: inherit;
+}
+@media only screen and (max-width: 1000px) {
+  #port h1 {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+  }
+  #port h1::after {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    margin-top: 10px;
+  }
+  .right {
+    float: none;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .rightp {
+    margin-top: 0%;
+    float: none;
+    width: 100%;
+  }
+  .right img {
+    width: 100%;
+  }
+  .rightp img {
+    width: 100%;
+  }
+  .floortime,
+  .aba {
+    width: 100%;
+  }
+  .floortime p,
+  .aba p {
+    width: 100%;
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .points {
+    max-width: 100%;
+  }
+  .points li {
+    font-size: 16px;
+  }
+  .tab button {
+    width: 60%;
+  }
+  .therapyhead {
+    font-size: 24px!important;
+  }
+}

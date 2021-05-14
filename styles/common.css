@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  max-width: 100%;
 }
 /* scrollbar*/
 /* width */
@@ -34,16 +35,16 @@ body {
   background: #ffa083;
 }
 
-/*navbar start*/
+/*nav start*/
 
-#navbar-container * {
+#nav-container * {
   -ms-user-select: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
 
-#navbar-container {
+#nav-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -56,7 +57,7 @@ body {
   z-index: 99;
 }
 
-#navbar {
+#nav {
   display: flex;
   color: #333333;
   flex-direction: row;
@@ -66,7 +67,7 @@ body {
   width: 100%;
 }
 
-#navbar-left {
+#nav-left {
   display: flex;
 }
 
@@ -129,19 +130,18 @@ p {
   color: #ffad94;
 }
 
-#logo,
-#navbar-left li {
+#logo {
   transform: translate(0, 10px);
 }
-#navbar-cta {
+#nav-cta {
   margin-left: auto;
   padding: 10px;
 }
 
-#navbar-cta button {
+#nav-cta button {
   margin-right: 10px;
 }
-/*navbar end*/
+/*nav end*/
 
 /* GLOBAL BUTTON STYLE */
 button {
@@ -155,13 +155,11 @@ button {
   transition-duration: 0.3s;
   box-shadow: #19033635 2px 2px 12px;
 }
-
-button:hover {
+button:active {
   background-color: rgb(255, 150, 118);
 }
-
-button:active {
-  background-color: rgb(247, 118, 78);
+button:hover {
+  background-color: rgb(255, 150, 118);
 }
 
 /*button end*/
@@ -174,7 +172,7 @@ button:active {
 .modal-open {
   overflow: hidden;
 }
-/*navbar media query*/
+/*nav media query*/
 @media (max-width: 1000px) {
   #logo img {
     height: 60px !important;
@@ -218,10 +216,10 @@ button:active {
     transform: translate(-15%, 0);
   }
 
-  #navbar-cta {
+  #nav-cta {
     display: none;
   }
-  #navbar-container {
+  #nav-container {
     height: 12vh;
     padding-top: 20px;
   }
@@ -229,6 +227,11 @@ button:active {
     float: right;
     margin-left: auto;
     display: block;
+  }
+  .social {
+    float: none !important;
+    letter-spacing: 20px;
+    margin-top: 50px!important;
   }
 }
 
@@ -263,12 +266,35 @@ footer h1 {
   letter-spacing: 20px;
   margin-top: 80px;
 }
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 .social i {
   font-size: 2.3rem !important;
+  cursor: pointer;
 }
 /*footer end*/
 .menu {
   margin-top: 25vh;
+  width: 100%;
 }
 .menu h1 {
   font-weight: 200;

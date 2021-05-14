@@ -32,12 +32,9 @@
   margin-top: 50px;
 }
 #whyus h1 {
-  margin-left: 50%;
   display: block;
   text-align: center;
-  transform: translateX(-50%);
   font-size: 64px;
-  width: 150%;
 }
 #whyus p {
   font-size: 20px;
