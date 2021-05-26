@@ -18,6 +18,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -28,7 +29,7 @@
           <img src="./res/cfdpt.png" alt="" />
         </div>
         <ul id="links">
-          <li><a href="./index.html">Home</a></li>
+          <li ><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./services.html">Services</a></li>
           <li><a href="./testimonials.html">Testimonials</a></li>
@@ -37,7 +38,7 @@
         </ul>
       </div>
       <div id="nav-cta">
-        <button onclick="alert('coming soon');">Get Started</button>
+        <button onclick="window.location.href='holisticdevelopment.html'">Holistic Pediatrics</button>
       </div>
       <div id="mobile-menu">
         <div class="icon">
@@ -48,37 +49,37 @@
       </div>
     </div>
   </header>
-      <div class="overlay">
-        <center>
-          <div class="menu">
-            <h1>
-              <a style="text-decoration: none; color: black" href="./index.html">Home
-              </a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="./about.html">About</a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="./services.html">Services</a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="./testimonials.html">Testimonials
-              </a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="./blog.html">Blog
-              </a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="./contact.html">Contact
-              </a>
-            </h1>
-            <button style="margin-top: 20px" onclick="alert('Coming Soon!')">
-              <b>Get Started</b>
-            </button>
-          </div>
-        </center>
+  <div class="overlay">
+    <center>
+      <div class="menu">
+        <h1>
+          <a style="text-decoration: none; color: black" href="./index.html">Home
+          </a>
+        </h1>
+        <h1>
+          <a style="text-decoration: none; color: black" href="./about.html">About</a>
+        </h1>
+        <h1>
+          <a style="text-decoration: none; color: black" href="./services.html">Services</a>
+        </h1>
+        <h1>
+          <a style="text-decoration: none; color: black" href="./testimonials.html">Testimonials
+          </a>
+        </h1>
+        <h1>
+          <a style="text-decoration: none; color: black" href="./blog.html">Blog
+          </a>
+        </h1>
+        <h1>
+          <a style="text-decoration: none; color: black" href="./contact.html">Contact
+          </a>
+        </h1>
+        <button style="margin-top: 20px" onclick="window.location.href='holisticdevelopment.html'">
+          <b>Holistic Pediatrics</b>
+        </button>
       </div>
+    </center>
+  </div>
   <main id="main-content">
     <div id="abouthead">
       <div class="aboutblock">
@@ -124,21 +125,22 @@
       </div>
     </div>
   </main>
-  <footer id="footer-container">
-    <div class="info" style="display: inline-block;">
-      <h1>CENTER FOR DEVELOPMENTAL PEDIATRICS</h1>
-      <p>1103, Tower 9, Valley View Estate,</p>
-      <p>Gwal Pahadi, Gurgaon - Faridabad Road</p>
-      <p>Gurgaon-122003</p>
-    </div>
-          <div class="social">
-            <i class="fa fa-facebook" style="color: #4267B2;"
-              onclick="window.open('https://www.facebook.com/centerfordevelopmentalpediatrics/', '_blank')"></i>
-            <i class="fa fa-instagram" onclick="window.open('https://www.instagram.com/developmentalpediatrics/', '_blank')"></i>
-            <i class="fa fa-whatsapp" style="color: #128c7e"
-              onclick="window.open('http://wa.me/919717158639?text=Hey%20there!/', '_blank')"></i>
-          </div>
-  </footer>
+<footer id="footer-container">
+  <div class="info" style="display: inline-block">
+    <h1>CENTRE FOR DEVELOPMENTAL & HOLISTIC PEDIATRICS</h1>
+    <p>1103, Tower 9, Valley View Estate,</p>
+    <p>Gwal Pahadi, Gurgaon - Faridabad Road</p>
+    <p>Gurgaon-122003</p>
+  </div>
+  <div class="social">
+    <i class="fa fa-facebook" style="color: #4267B2;"
+      onclick="window.open('https://www.facebook.com/centerfordevelopmentalpediatrics/', '_blank')"></i>
+    <i class="fa fa-instagram"
+      onclick="window.open('https://www.instagram.com/developmentalpediatrics/', '_blank')"></i>
+    <i class="fa fa-whatsapp" style="color: #128c7e"
+      onclick="window.open('http://wa.me/919717158639?text=Hey%20there!/', '_blank')"></i>
+  </div>
+</footer>
   <script>
     $("#mobile-menu").click(function () {
       $(".icon").toggleClass("close");
@@ -151,6 +153,9 @@
         $("body").removeClass("modal-open");
       }
     });
+          $('span:not(.line))').click(function () {
+              window.location.href = "holisticdevelopment.html"
+            })
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

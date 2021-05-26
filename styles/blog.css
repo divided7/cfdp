@@ -48,30 +48,30 @@
   justify-content: space-between;
   padding: 0% 10%;
 }
-.card{
-  margin:5% 0%
+.card {
+  margin: 5% 0%;
 }
-.btn-primary{
+.btn-primary {
   background-color: #ffad94;
-  color:black;
+  color: black;
   border-color: transparent;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: rgb(255, 150, 118);
   transition: 0.2s linear;
-  color:black;
-  border-color: transparent!important;
+  color: black;
+  border-color: transparent !important;
 }
-.btn-primary:active{
-  background-color: rgb(255, 150, 118)!important;
+.btn-primary:active {
+  background-color: rgb(255, 150, 118) !important;
   transition: 0.2s linear;
-  color:black
+  color: black;
 }
-.btn-primary:focus{
-  box-shadow: none!important;
+.btn-primary:focus {
+  box-shadow: none !important;
 }
 #nav-left li {
-    transform: translate(0, 25px);
+  transform: translate(0, 20px);
 }
 #port h1 {
   font-size: 8vw;

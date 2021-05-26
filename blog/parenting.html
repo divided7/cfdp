@@ -25,64 +25,64 @@
 </head>
 
 <body>
-  <header id="nav-container">
-    <div id="nav">
-      <div id="nav-left">
-        <div id="logo">
-          <img src="../res/cfdpt.png" alt="" />
-        </div>
-        <ul id="links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../services.html">Services</a></li>
-          <li><a href="../testimonials.html">Testimonials</a></li>
-          <li class="active"><a href="../blog.html">Blog</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
+<header id="nav-container">
+  <div id="nav">
+    <div id="nav-left">
+      <div id="logo">
+        <img src="./res/cfdpt.png" alt="" />
       </div>
-      <div id="nav-cta">
-        <button onclick="alert('coming soon');">Get Started</button>
-      </div>
-      <div id="mobile-menu">
-        <div class="icon">
-          <span class="line top"></span>
-          <span class="line middle"></span>
-          <span class="line bottom"></span>
-        </div>
+      <ul id="links">
+        <li ><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./testimonials.html">Testimonials</a></li>
+        <li class="active"> <a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div id="nav-cta">
+      <button onclick="window.location.href='holisticdevelopment.html'">Holistic Pediatrics</button>
+    </div>
+    <div id="mobile-menu">
+      <div class="icon">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
       </div>
     </div>
-  </header>
-      <div class="overlay">
-        <center>
-          <div class="menu">
-            <h1>
-              <a style="text-decoration: none; color: black" href="../index.html">Home
-              </a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="../about.html">About</a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="../services.html">Services</a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="../testimonials.html">Testimonials
-              </a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="../blog.html">Blog
-              </a>
-            </h1>
-            <h1>
-              <a style="text-decoration: none; color: black" href="../contact.html">Contact
-              </a>
-            </h1>
-            <button style="margin-top: 20px" onclick="alert('Coming Soon!')">
-              <b>Get Started</b>
-            </button>
-          </div>
-        </center>
-      </div>
+  </div>
+</header>
+<div class="overlay">
+  <center>
+    <div class="menu">
+      <h1>
+        <a style="text-decoration: none; color: black" href="./index.html">Home
+        </a>
+      </h1>
+      <h1>
+        <a style="text-decoration: none; color: black" href="./about.html">About</a>
+      </h1>
+      <h1>
+        <a style="text-decoration: none; color: black" href="./services.html">Services</a>
+      </h1>
+      <h1>
+        <a style="text-decoration: none; color: black" href="./testimonials.html">Testimonials
+        </a>
+      </h1>
+      <h1>
+        <a style="text-decoration: none; color: black" href="./blog.html">Blog
+        </a>
+      </h1>
+      <h1>
+        <a style="text-decoration: none; color: black" href="./contact.html">Contact
+        </a>
+      </h1>
+      <button style="margin-top: 20px" onclick="window.location.href='holisticdevelopment.html'">
+        <b>Holistic Pediatrics</b>
+      </button>
+    </div>
+  </center>
+</div>
   <main id="main-content">
     <div id="abouthead">
       <div class="aboutblock">
@@ -193,6 +193,9 @@
             }
           });
         });
+              $('span:not(.line))').click(function () {
+                  window.location.href = "holisticdevelopment.html"
+                })
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

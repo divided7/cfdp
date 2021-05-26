@@ -1,10 +1,20 @@
+@media (max-width: 1000px) {
+  #nav-cta {
+    display: block;
+    margin-right: -50px;
+  }
+  button {
+    font-size: 14px;
+    padding: 6px 18px;
+  }
+}
 #header {
   margin-top: 12vh;
-  height: 75vh;
+  height: 45vh;
 
-  background-image: url("../res/head.jpg");
+  background-image: url("../res/hol.jpg");
 
-  background-position: center center;
+  background-position: 0% 60%;
 
   background-repeat: no-repeat;
 
@@ -74,7 +84,7 @@ sup {
   bottom: 20%;
   right: 10%;
   position: absolute;
-  width: 30%;
+  width: 40%;
   z-index: 2;
 }
 .headblock h1 {
@@ -82,15 +92,69 @@ sup {
   line-height: 80px;
   margin-bottom: 0px;
 }
+.first {
+  margin-top: -20px;
+}
+.progress-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px; /* Adjust to desired height */
+  width: 100%;
+  background: #ffffff;
+}
 
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  background: #ffa083;
+  width: 0%;
+}
+#btt {
+  display: inline-block;
+  background-color: #ffad94;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#btt::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#btt:hover {
+  cursor: pointer;
+  background-color: #ffa083;
+}
+#btt:active {
+  background-color: #ffa083;
+}
+#btt.show {
+  opacity: 1;
+  visibility: visible;
+}
+img:not(#nav img) {
+  max-width: 100%;
+}
 @media only screen and (max-width: 1000px) {
   #header {
     margin-top: 12vh;
-    height: 40vh;
+    height: 30vh;
 
-    background-image: url("../res/head.jpg");
+    background-image: url("../res/hol.jpg");
 
-    background-position: center center;
+    background-position: 0% 30%;
 
     background-repeat: no-repeat;
 
@@ -104,9 +168,9 @@ sup {
   }
   .headblock {
     /* display: none; */
-    bottom: 25%;
+    bottom: 10%;
     right: 0%;
-    width: 50%;
+    width: 70%;
   }
   .headblock h1 {
     font-size: 20px;
